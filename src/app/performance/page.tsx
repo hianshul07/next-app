@@ -1,6 +1,15 @@
-import Link from 'next/link';
+import Hero from '@/components/Hero';
+import performaceImg from '/public/performance.jpg';
 
 const Performance = () => {
-	return <div>Performance</div>;
+	return (
+		<div>
+			<Hero
+				imgData={performaceImg}
+				imgAlt='machine working'
+				title='We serve high performance applications'
+			/>
+		</div>
+	);
 };
 export default Performance;
